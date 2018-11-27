@@ -1,0 +1,9 @@
+.singleVal.text{
+  position: absolute;
+  left: 3px;
+}
+
+.doubleVal.text{
+  position: absolute;
+  left: 0px;
+}
