@@ -1,9 +1,3 @@
-.singleVal.text{
-  position: absolute;
-  left: 3px;
-}
-
-.doubleVal.text{
-  position: absolute;
-  left: 0px;
+body {
+  padding-top: 61px;  /* Move body of page below navbar. */
 }
