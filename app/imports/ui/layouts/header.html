@@ -1,0 +1,13 @@
+<template name="Header">
+  <div class="ui fixed top borderless inverted menu">
+    <div class="ui container">
+      <a class="item" href="{{pathFor 'Home_Page'}}"><h1>Groupie</h1></a>
+      {{#if currentUser}}
+      <a class="item" href="">Groups</a>
+      <a class="{{ isActiveRoute 'Calendar_Page'}} item" href="{{ pathFor 'Calendar_Page' }}">Calendar</a>
+      {{/if}}
+      <a class="item" href="{{pathFor 'Compiler'}}">JS Compiler</a>
+      <a href="#" class="right aligned item">{{> loginButtons align="right"}} </a>
+    </div>
+  </div>
+</template>
