@@ -36,6 +36,13 @@ FlowRouter.route('/compiler', {
   },
 });
 
+FlowRouter.route('/calendar', {
+  name: 'Calendar_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Calendar_Page' });
+  },
+});
+
 FlowRouter.notFound = {
   action() {
     BlazeLayout.render('App_Body', { main: 'App_Not_Found' });

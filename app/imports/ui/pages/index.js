@@ -12,3 +12,6 @@ import './list-stuff-page.js';
 
 import './compiler.html';
 import './compiler.js';
+
+import './calendar.html';
+import './calendar.js';
