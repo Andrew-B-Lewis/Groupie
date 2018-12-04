@@ -8,6 +8,12 @@ FlowRouter.route('/', {
   },
 });
 
+FlowRouter.route('/Add_Group_Form', {
+  name: 'Add_Group_Form',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Add_Group_Form' });
+  },
+});
 /*
 FlowRouter.route('/stuff/:_id', {
   name: 'Edit_Stuff_Page',
