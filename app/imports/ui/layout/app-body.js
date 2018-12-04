@@ -1,7 +1,7 @@
 import { Template } from 'meteor/templating';
 import { Group } from '../../ui/api/Group.js';
 
-Template.header.helpers({
+Template.Header.helpers({
 
   /**
    * @returns {*} All of the Stuff documents.

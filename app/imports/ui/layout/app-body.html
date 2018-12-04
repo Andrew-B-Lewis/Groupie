@@ -10,9 +10,9 @@
         File Repos
         <i class="dropdown icon"></i>
         <div class="menu">
-          <div class="item">Item 1</div>
-          <div class="item">Item 2</div>
-          <div class="item">Item 3</div>
+          {{#each Group in groupList}}
+            <li>{{Group.creator}}</li>
+          {{/each}}
         </div>
       </div>
     </div>
