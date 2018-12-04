@@ -1,8 +1,23 @@
 <template name="Compiler_Page">
   <div style="padding-top: 61px" class="ui form container">
+    <div class="ui center aligned container">
+      <h5>
+        Paste code into the text box for the language you're using <br />
+        and press the 'Compile' button. Output will appear in your <br />
+        browser's developer console!
+      </h5>
+    </div>
     <form class="ui file form container">
-      <label>Test</label>
-      <textarea name="code" type="text" rows="32"></textarea>
+      <h1>JavaScript</h1>
+      <textarea style="background-color: lightgray" name="code" type="text" rows="32"></textarea>
+      <button class="ui color submit button" type="submit">Compile</button>
+    </form>
+    <br />
+    <hr>
+    <br />
+    <form class="ui file form container">
+      <h1>C# STILL JS</h1>
+      <textarea style="background-color: lightgray" name="code" type="text" rows="32"></textarea>
       <button class="ui color submit button" type="submit">Compile</button>
     </form>
   </div>
