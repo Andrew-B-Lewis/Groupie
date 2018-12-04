@@ -1,7 +1,8 @@
 import { Mongo } from 'meteor/mongo';
-import { SimpleSchema } from 'meteor/aldeed:simple-schema';
+import { SimpleSchema } from 'meteor/aldeed:simpl-schema';
 
 export const Group = new Mongo.Collection("Group");
+export const Event = new Mongo.Collection("Event");
 
 export const GroupSchema = new SimpleSchema({
   name: {
@@ -19,4 +20,21 @@ export const GroupSchema = new SimpleSchema({
 
 });
 
+export const EventSchema = new SimpleSchema({
+  title: {
+    label: 'title',
+    type: String,
+  },
+  time: {
+    label: 'time',
+    type: String,
+  },
+  desc: {
+    label: 'desc',
+    type: String,
+  },
+});
+
+
 Group.attachSchema(GroupSchema);
+Event.attachSchema(EventSchema);

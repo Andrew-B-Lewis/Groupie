@@ -1,3 +1,23 @@
 <template name="App_Body">
+  {{> Header}}
   {{> Template.dynamic template=main}}
+</template>
+
+<template name="Header">
+  <div class="ui menu">
+    <div class="compact menu">
+      <div class="ui simple dropdown item">
+        File Repos
+        <i class="dropdown icon"></i>
+        <div class="menu">
+          <div class="item">Item 1</div>
+          <div class="item">Item 2</div>
+          <div class="item">Item 3</div>
+        </div>
+      </div>
+    </div>
+    <div class="right menu">
+      <div class="item">Editor</div>
+    </div>
+  </div>
 </template>
